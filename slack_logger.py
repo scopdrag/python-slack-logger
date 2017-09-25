@@ -1,6 +1,9 @@
 import json
 import logging
-from urllib.parse import urlparse
+from future.standard_library import install_aliases
+install_aliases()
+
+from urllib.parse import urlparse, urlencode
 from logging.handlers import HTTPHandler
 
 
