@@ -68,6 +68,7 @@ class SlackFormatter(logging.Formatter):
         ret['ts'] = record.created
         ret['text'] = super(SlackFormatter, self).format(record)
         print(ret['text'])
+        print(ret['text'])
         return ret
 
 
